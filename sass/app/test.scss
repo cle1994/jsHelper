@@ -65,7 +65,7 @@
             }
 
             .space {
-                color: #ffffff;
+                color: #333333;
                 line-height: 26px;
                 font-size: 18px;
                 font-weight: 400;
@@ -74,9 +74,10 @@
 
             ul {
                 list-style-type: circle;
+                margin-left: 20px;
 
                 .list {
-                    color: #ffffff;
+                    color: #333333;
                     line-height: 20px;
                     font-size: 16px;
                     font-weight: 300;
