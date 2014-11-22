@@ -1,0 +1,96 @@
+.nav {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background: #ffffff;
+    height: 40px;
+    z-index: 100;
+    @include box-shadow(0, 0, 5px, #cccccc, false);
+
+    .nav-logo {
+        cursor: pointer;
+
+        .box {
+            position: absolute;
+            height: 40px;
+            width: 40px;
+            background: $primary;
+
+            -webkit-transition: background 0.2s;
+            -moz-transition: background 0.2s;
+            -ms-transition: background 0.2s;
+            -o-transition: background 0.2s;
+            transition: background 0.2s;
+
+            .icon {
+                font-family: 'Open sans', sans-serif;
+                position: absolute;
+                bottom: 5px;
+                right: 5px;
+                font-size: 14px;
+                font-weight: 400;
+                color: #ffffff;
+
+                -webkit-transition: color 0.2s;
+                -moz-transition: color 0.2s;
+                -ms-transition: color 0.2s;
+                -o-transition: color 0.2s;
+                transition: color 0.2s;
+            }
+        }
+
+        .text {
+            position: absolute;
+            bottom: 10px;
+            left: 50px;
+
+            .javascript {
+                font-family: 'Open sans', sans-serif;
+                font-weight: 400;
+                font-size: 18px;
+                text-transform: uppercase;
+                color: #555555;
+
+                -webkit-transition: color 0.2s;
+                -moz-transition: color 0.2s;
+                -ms-transition: color 0.2s;
+                -o-transition: color 0.2s;
+                transition: color 0.2s;
+            }
+
+            .helper {
+                font-family: 'Open sans', sans-serif;
+                font-weight: 300;
+                font-size: 14px;
+                text-transform: uppercase;
+                color: #555555;
+
+                -webkit-transition: color 0.2s;
+                -moz-transition: color 0.2s;
+                -ms-transition: color 0.2s;
+                -o-transition: color 0.2s;
+                transition: color 0.2s;
+            }
+        }
+
+        &:hover {
+            .box {
+                background: #555555;
+
+                .icon {
+                    color: $primary;
+                }
+            }
+
+            .text {
+                .javascript {
+                    color: $primary;
+                }
+
+                .helper {
+                    color: $primary;
+                }
+            }
+        }
+    }
+}

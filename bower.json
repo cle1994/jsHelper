@@ -1,0 +1,13 @@
+{
+  "name": "jsHelper",
+  "version": "1.0.0",
+  "dependencies": {
+    "angular": "latest",
+    "angular-touch": "latest",
+    "angular-ui-router": "latest",
+    "angular-ui-ace": "latest",
+    "angular-animate": "latest",
+    "esprima": "latest",
+    "underscore": "latest"
+  }
+}

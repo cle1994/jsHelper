@@ -1,0 +1,43 @@
+<div class="test-container" data-ng-controller="TestController">
+    <div ui-ace="{
+    showGutter: true,
+    theme:'xcode',
+    mode: 'javascript',
+    onLoad: aceLoaded,
+    onChange: aceChanged
+    }" class="two-col ace-editor" data-ng-model="editor"></div>
+
+    <div class="two-col response">
+        <div class="comp">
+            <img src="../img/icon/{{ emotion }}-comp.png" alt="">
+        </div>
+        <div class="bubble">
+            <div data-ng-hide="isArray">
+                {{ test }}
+            </div>
+            <div data-ng-show="isArray && !isResponse">
+                <p data-ng-repeat="item in test track by $index">
+                    {{ item.description }} in line {{ item.lineNumber }}
+                </p>
+            </div>
+            <div data-ng-if="isArray && isResponse">
+                <div data-ng-hide="test.length <= 0 || testKind == 'structure'">
+                    <p class="sadness space">
+                        Oh noooo =&#091;
+                    </p>
+                    <p class="space">
+                        {{ sadMsg }}
+                    </p>
+                    <ul>
+                        <li class="list" data-ng-repeat="item in test">
+                            {{ item | camelCaseSplit }}
+                        </li>
+                    </ul>
+                </div>
+                <div data-ng-show="test.length <= 0">
+                    {{ happyMsg }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

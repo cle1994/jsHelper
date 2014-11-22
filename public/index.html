@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <link rel="icon" type="image/png" href="./img/icon/icon.png">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <base href="/" />
+
+        <title>CLe Javascript Feedback</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="css/application.css">
+
+        <!-- Angular -->
+        <script src="./libs/js/angular.min.js"></script>
+        <script src="./libs/js/angular-ui-router.min.js"></script>
+        <script src="./libs/js/angular-touch.min.js"></script>
+        <script src="./libs/js/angular-animate.min.js"></script>
+
+        <!-- Ace Editor -->
+        <script src="./libs/js/ace.js"></script>
+        <script src="./libs/js/ui-ace.min.js"></script>
+        <script src="./libs/js/worker-javascript.js"></script>
+        <script src="./libs/js/ace-mode/mode-javascript.js"></script>
+        <script src="./libs/js/ace-theme/theme-xcode.js"></script>
+
+        <!-- Underscore -->
+        <script src="./libs/js/underscore-min.js"></script>
+
+        <!-- Esprima -->
+        <script src="./libs/js/esprima.js"></script>
+
+        <!-- Testing -->
+        <script src="./js/whitelist.js"></script>
+        <script src="./js/blacklist.js"></script>
+        <script src="./js/structure.js"></script>
+
+        <!-- ANGULAR CUSTOM -->
+        <script src="./js/app.min.js"></script>
+    </head>
+    <body id="ng-app" data-ng-app="javascript-helper">
+        <div class="nav">
+            <div class="nav-logo" data-ui-sref="home">
+                <div class="box"><div class="icon">js</div></div>
+                <span class="text">
+                    <span class="javascript">javascript</span><span class="helper">helper</span>
+                </span>
+            </div>
+        </div>
+        <div data-ui-view></div>
+    </body>
+</html>
